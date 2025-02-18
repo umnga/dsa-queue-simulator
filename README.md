@@ -1,4 +1,4 @@
-# 🚦 Advanced Traffic Queue Simulator
+m# 🚦 Advanced Traffic Queue Simulator
 > A stunning C++/SDL3 implementation of traffic junction management with cutting-edge animations and priority queues.
 
 ```
@@ -200,6 +200,6 @@ MIT LICENSE
 ---
 
 ```
-Created with 💖 by Traffic Simulation Team
+Created with umnga a god hurray hurray ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
         [███████████]
 ```
