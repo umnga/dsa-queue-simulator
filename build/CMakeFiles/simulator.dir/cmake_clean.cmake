@@ -15,7 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o.d"
   "CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o"
   "CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o.d"
-  "bin/simulator.app/Contents/MacOS/simulator"
+  "bin/simulator"
   "bin/simulator.pdb"
 )
 
