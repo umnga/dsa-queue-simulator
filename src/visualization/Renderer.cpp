@@ -72,12 +72,12 @@ bool Renderer::loadTextures() {
         return false;
     }
 
-    // Fill with blue color using a simpler approach
-    // Create a color value manually
-    Uint32 blueColor = 0x0000FFFF; // RGBA format: blue with full alpha
+    // Fill with silver color using a simpler approach
+    // Create a color value manually - RGBA format: silver (192,192,192) with full alpha
+    Uint32 silverColor = 0xC0C0C0FF;  // Changed from blueColor to silverColor
 
     // Fill the entire surface with this color
-    SDL_FillSurfaceRect(surface, NULL, blueColor);
+    SDL_FillSurfaceRect(surface, NULL, silverColor);
 
     carTexture = SDL_CreateTextureFromSurface(renderer, surface);
     SDL_DestroySurface(surface);
@@ -618,10 +618,13 @@ void Renderer::drawRoadsAndLanes() {
     int bSize = 30;
     // Draw "B" using lines
     SDL_RenderLine(renderer, bX - bSize/2, bY - bSize/2, bX - bSize/2, bY + bSize/2); // Vertical
-    SDL_RenderLine(renderer, bX - bSize/2, bY - bSize/2, bX + bSize/2, bY - bSize/4); // Top curve
-    SDL_RenderLine(renderer, bX + bSize/2, bY - bSize/4, bX, bY); // Top to middle
-    SDL_RenderLine(renderer, bX, bY, bX + bSize/2, bY + bSize/4); // Middle to bottom
-    SDL_RenderLine(renderer, bX + bSize/2, bY + bSize/4, bX - bSize/2, bY + bSize/2); // Bottom curve
+    SDL_RenderLine(renderer, bX - bSize/2, bY - bSize/2, bX + bSize/3, bY - bSize/2); // Top curve
+    SDL_RenderLine(renderer, bX + bSize/3, bY - bSize/2, bX + bSize/2, bY - bSize/4); // Top to middle
+    SDL_RenderLine(renderer, bX + bSize/2, bY - bSize/4, bX + bSize/3, bY); // To middle
+    SDL_RenderLine(renderer, bX - bSize/2, bY, bX + bSize/3, bY); // Middle
+    SDL_RenderLine(renderer, bX + bSize/3, bY, bX + bSize/2, bY + bSize/4); // From middle
+    SDL_RenderLine(renderer, bX + bSize/2, bY + bSize/4, bX + bSize/3, bY + bSize/2); // Bottom curve
+    SDL_RenderLine(renderer, bX + bSize/3, bY + bSize/2, bX - bSize/2, bY + bSize/2); // Bottom
 
     // Draw a large "C" at the bottom (South Road)
     int cX = CENTER_X;
@@ -852,46 +855,18 @@ void Renderer::drawLaneFlowArrow(int x, int y, Direction dir) {
 // FILE: src/visualization/Renderer.cpp
 // Corrected implementation of drawDirectionArrow method
 
-void Renderer::drawDirectionArrow(int x, int y, Direction dir, SDL_Color color) {
-    SDL_SetRenderDrawColor(this->renderer, color.r, color.g, color.b, color.a);
+void Renderer::drawDirectionArrow(int x, int y, int x2, int y2, int x3, int y3, SDL_Color color) {
+    SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
 
-    const int arrowSize = 12;
+    // Draw triangle outline
+    SDL_RenderLine(renderer, x, y, x2, y2);
+    SDL_RenderLine(renderer, x2, y2, x3, y3);
+    SDL_RenderLine(renderer, x3, y3, x, y);
 
-    SDL_FPoint points[3];
-
-    switch (dir) {
-        case Direction::UP:
-            points[0] = {static_cast<float>(x), static_cast<float>(y - arrowSize/2)};
-            points[1] = {static_cast<float>(x - arrowSize/2), static_cast<float>(y + arrowSize/2)};
-            points[2] = {static_cast<float>(x + arrowSize/2), static_cast<float>(y + arrowSize/2)};
-            break;
-
-        case Direction::DOWN:
-            points[0] = {static_cast<float>(x), static_cast<float>(y + arrowSize/2)};
-            points[1] = {static_cast<float>(x - arrowSize/2), static_cast<float>(y - arrowSize/2)};
-            points[2] = {static_cast<float>(x + arrowSize/2), static_cast<float>(y - arrowSize/2)};
-            break;
-
-        case Direction::LEFT:
-            points[0] = {static_cast<float>(x - arrowSize/2), static_cast<float>(y)};
-            points[1] = {static_cast<float>(x + arrowSize/2), static_cast<float>(y - arrowSize/2)};
-            points[2] = {static_cast<float>(x + arrowSize/2), static_cast<float>(y + arrowSize/2)};
-            break;
-
-        case Direction::RIGHT:
-            points[0] = {static_cast<float>(x + arrowSize/2), static_cast<float>(y)};
-            points[1] = {static_cast<float>(x - arrowSize/2), static_cast<float>(y - arrowSize/2)};
-            points[2] = {static_cast<float>(x - arrowSize/2), static_cast<float>(y + arrowSize/2)};
-            break;
-    }
-
-    // Draw outline
-    SDL_RenderLine(this->renderer, points[0].x, points[0].y, points[1].x, points[1].y);
-    SDL_RenderLine(this->renderer, points[1].x, points[1].y, points[2].x, points[2].y);
-    SDL_RenderLine(this->renderer, points[2].x, points[2].y, points[0].x, points[0].y);
-
-    // Create SDL vertices for filled triangle
+    // Create vertices for filled triangle with SDL_FColor for SDL3 compatibility
     SDL_Vertex vertices[3];
+
+    // Convert SDL_Color to SDL_FColor for vertices
     SDL_FColor fcolor = {
         static_cast<float>(color.r) / 255.0f,
         static_cast<float>(color.g) / 255.0f,
@@ -899,14 +874,23 @@ void Renderer::drawDirectionArrow(int x, int y, Direction dir, SDL_Color color) 
         static_cast<float>(color.a) / 255.0f
     };
 
-    // Set vertices
-    for (int i = 0; i < 3; i++) {
-        vertices[i].position = points[i];
-        vertices[i].color = fcolor;
-    }
+    // First vertex
+    vertices[0].position.x = x;
+    vertices[0].position.y = y;
+    vertices[0].color = fcolor;
 
-    // Draw filled triangle
-    SDL_RenderGeometry(this->renderer, NULL, vertices, 3, NULL, 0);
+    // Second vertex
+    vertices[1].position.x = x2;
+    vertices[1].position.y = y2;
+    vertices[1].color = fcolor;
+
+    // Third vertex
+    vertices[2].position.x = x3;
+    vertices[2].position.y = y3;
+    vertices[2].color = fcolor;
+
+    // Draw the filled triangle
+    SDL_RenderGeometry(renderer, NULL, vertices, 3, NULL, 0);
 }
 
 void Renderer::drawLaneLabels() {
@@ -1076,69 +1060,8 @@ void Renderer::drawLaneLabels() {
                       CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f + 5.0f,
                       CENTER_Y - ROAD_WIDTH/2 - 45.0f);
         SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 45.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 40.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f + 5.0f,
                       CENTER_Y - ROAD_WIDTH/2 - 40.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 40.0f);
-
-        // A3 (Free) - Green marker
-        SDL_SetRenderDrawColor(renderer, 50, 205, 50, 255); // Lime Green
-        SDL_FRect a3Box = {
-            static_cast<float>(CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 15.0f),
-            static_cast<float>(CENTER_Y - ROAD_WIDTH/2 - 30.0f),
-            30.0f, 20.0f
-        };
-        SDL_RenderFillRect(renderer, &a3Box);
-
-        // Draw "A3" inside
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        // A
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 25.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 15.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 15.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f,
-                      CENTER_Y - ROAD_WIDTH/2 - 25.0f);
-        // 3
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 25.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 25.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 25.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 20.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 20.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 20.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 20.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 15.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 10.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 15.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 15.0f);
-
-        // Draw "F" for free (above the marker)
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 35.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 45.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 45.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 45.0f);
-        SDL_RenderLine(renderer, CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f - 5.0f,
-                      CENTER_Y - ROAD_WIDTH/2 - 40.0f,
-                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*2.5f + 2.0f,
+                      CENTER_X - ROAD_WIDTH/2 + LANE_WIDTH*1.5f + 2.0f,
                       CENTER_Y - ROAD_WIDTH/2 - 40.0f);
     }
 
