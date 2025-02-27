@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o"
-  "CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o.d"
-  "CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o"
-  "CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o.d"
-  "traffic_generator"
-  "traffic_generator.pdb"
+  "CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o"
+  "CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o.d"
+  "bin/traffic_generator"
+  "bin/traffic_generator.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

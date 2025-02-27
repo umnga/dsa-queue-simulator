@@ -72,51 +72,36 @@ include CMakeFiles/traffic_generator.dir/flags.make
 CMakeFiles/traffic_generator.dir/codegen:
 .PHONY : CMakeFiles/traffic_generator.dir/codegen
 
-CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o: CMakeFiles/traffic_generator.dir/flags.make
-CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/main.cpp
-CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o: CMakeFiles/traffic_generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o -MF CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o.d -o CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/main.cpp
+CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o: CMakeFiles/traffic_generator.dir/flags.make
+CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/traffic_generator.cpp
+CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o: CMakeFiles/traffic_generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o -MF CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o.d -o CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/traffic_generator.cpp
 
-CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/main.cpp > CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.i
+CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/traffic_generator.cpp > CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.i
 
-CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/main.cpp -o CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.s
-
-CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o: CMakeFiles/traffic_generator.dir/flags.make
-CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/Generator.cpp
-CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o: CMakeFiles/traffic_generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o -MF CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o.d -o CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/Generator.cpp
-
-CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/Generator.cpp > CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.i
-
-CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/Generator.cpp -o CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.s
+CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/traffic_generator.cpp -o CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.s
 
 # Object files for target traffic_generator
 traffic_generator_OBJECTS = \
-"CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o" \
-"CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o"
+"CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o"
 
 # External object files for target traffic_generator
 traffic_generator_EXTERNAL_OBJECTS =
 
-traffic_generator: CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o
-traffic_generator: CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o
-traffic_generator: CMakeFiles/traffic_generator.dir/build.make
-traffic_generator: CMakeFiles/traffic_generator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable traffic_generator"
+bin/traffic_generator: CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o
+bin/traffic_generator: CMakeFiles/traffic_generator.dir/build.make
+bin/traffic_generator: CMakeFiles/traffic_generator.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/traffic_generator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/traffic_generator.dir/link.txt --verbose=$(VERBOSE)
+	/opt/homebrew/bin/cmake -E make_directory /Users/umangarayamajhi/Documents/dsa-queue-simulator/build/bin/data/lanes
 
 # Rule to build all files generated by this target.
-CMakeFiles/traffic_generator.dir/build: traffic_generator
+CMakeFiles/traffic_generator.dir/build: bin/traffic_generator
 .PHONY : CMakeFiles/traffic_generator.dir/build
 
 CMakeFiles/traffic_generator.dir/clean:

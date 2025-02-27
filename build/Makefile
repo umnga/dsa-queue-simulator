@@ -262,30 +262,6 @@ src/managers/FileHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.s
 .PHONY : src/managers/FileHandler.cpp.s
 
-src/managers/IntersectionController.o: src/managers/IntersectionController.cpp.o
-.PHONY : src/managers/IntersectionController.o
-
-# target to build an object file
-src/managers/IntersectionController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o
-.PHONY : src/managers/IntersectionController.cpp.o
-
-src/managers/IntersectionController.i: src/managers/IntersectionController.cpp.i
-.PHONY : src/managers/IntersectionController.i
-
-# target to preprocess a source file
-src/managers/IntersectionController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.i
-.PHONY : src/managers/IntersectionController.cpp.i
-
-src/managers/IntersectionController.s: src/managers/IntersectionController.cpp.s
-.PHONY : src/managers/IntersectionController.s
-
-# target to generate assembly for a file
-src/managers/IntersectionController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.s
-.PHONY : src/managers/IntersectionController.cpp.s
-
 src/managers/TrafficManager.o: src/managers/TrafficManager.cpp.o
 .PHONY : src/managers/TrafficManager.o
 
@@ -310,53 +286,53 @@ src/managers/TrafficManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s
 .PHONY : src/managers/TrafficManager.cpp.s
 
-src/utils/Queue.o: src/utils/Queue.cpp.o
-.PHONY : src/utils/Queue.o
+src/traffic_generator.o: src/traffic_generator.cpp.o
+.PHONY : src/traffic_generator.o
 
 # target to build an object file
-src/utils/Queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/Queue.cpp.o
-.PHONY : src/utils/Queue.cpp.o
+src/traffic_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o
+.PHONY : src/traffic_generator.cpp.o
 
-src/utils/Queue.i: src/utils/Queue.cpp.i
-.PHONY : src/utils/Queue.i
+src/traffic_generator.i: src/traffic_generator.cpp.i
+.PHONY : src/traffic_generator.i
 
 # target to preprocess a source file
-src/utils/Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/Queue.cpp.i
-.PHONY : src/utils/Queue.cpp.i
+src/traffic_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.i
+.PHONY : src/traffic_generator.cpp.i
 
-src/utils/Queue.s: src/utils/Queue.cpp.s
-.PHONY : src/utils/Queue.s
+src/traffic_generator.s: src/traffic_generator.cpp.s
+.PHONY : src/traffic_generator.s
 
 # target to generate assembly for a file
-src/utils/Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/Queue.cpp.s
-.PHONY : src/utils/Queue.cpp.s
+src/traffic_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.s
+.PHONY : src/traffic_generator.cpp.s
 
-src/visualization/DebugOverlay.o: src/visualization/DebugOverlay.cpp.o
-.PHONY : src/visualization/DebugOverlay.o
+src/utils/DebugLogger.o: src/utils/DebugLogger.cpp.o
+.PHONY : src/utils/DebugLogger.o
 
 # target to build an object file
-src/visualization/DebugOverlay.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o
-.PHONY : src/visualization/DebugOverlay.cpp.o
+src/utils/DebugLogger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o
+.PHONY : src/utils/DebugLogger.cpp.o
 
-src/visualization/DebugOverlay.i: src/visualization/DebugOverlay.cpp.i
-.PHONY : src/visualization/DebugOverlay.i
+src/utils/DebugLogger.i: src/utils/DebugLogger.cpp.i
+.PHONY : src/utils/DebugLogger.i
 
 # target to preprocess a source file
-src/visualization/DebugOverlay.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.i
-.PHONY : src/visualization/DebugOverlay.cpp.i
+src/utils/DebugLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.i
+.PHONY : src/utils/DebugLogger.cpp.i
 
-src/visualization/DebugOverlay.s: src/visualization/DebugOverlay.cpp.s
-.PHONY : src/visualization/DebugOverlay.s
+src/utils/DebugLogger.s: src/utils/DebugLogger.cpp.s
+.PHONY : src/utils/DebugLogger.s
 
 # target to generate assembly for a file
-src/visualization/DebugOverlay.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.s
-.PHONY : src/visualization/DebugOverlay.cpp.s
+src/utils/DebugLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.s
+.PHONY : src/utils/DebugLogger.cpp.s
 
 src/visualization/Renderer.o: src/visualization/Renderer.cpp.o
 .PHONY : src/visualization/Renderer.o
@@ -381,54 +357,6 @@ src/visualization/Renderer.s: src/visualization/Renderer.cpp.s
 src/visualization/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.s
 .PHONY : src/visualization/Renderer.cpp.s
-
-traffic_generator/src/Generator.o: traffic_generator/src/Generator.cpp.o
-.PHONY : traffic_generator/src/Generator.o
-
-# target to build an object file
-traffic_generator/src/Generator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o
-.PHONY : traffic_generator/src/Generator.cpp.o
-
-traffic_generator/src/Generator.i: traffic_generator/src/Generator.cpp.i
-.PHONY : traffic_generator/src/Generator.i
-
-# target to preprocess a source file
-traffic_generator/src/Generator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.i
-.PHONY : traffic_generator/src/Generator.cpp.i
-
-traffic_generator/src/Generator.s: traffic_generator/src/Generator.cpp.s
-.PHONY : traffic_generator/src/Generator.s
-
-# target to generate assembly for a file
-traffic_generator/src/Generator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.s
-.PHONY : traffic_generator/src/Generator.cpp.s
-
-traffic_generator/src/main.o: traffic_generator/src/main.cpp.o
-.PHONY : traffic_generator/src/main.o
-
-# target to build an object file
-traffic_generator/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o
-.PHONY : traffic_generator/src/main.cpp.o
-
-traffic_generator/src/main.i: traffic_generator/src/main.cpp.i
-.PHONY : traffic_generator/src/main.i
-
-# target to preprocess a source file
-traffic_generator/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.i
-.PHONY : traffic_generator/src/main.cpp.i
-
-traffic_generator/src/main.s: traffic_generator/src/main.cpp.s
-.PHONY : traffic_generator/src/main.s
-
-# target to generate assembly for a file
-traffic_generator/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/traffic_generator.dir/build.make CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.s
-.PHONY : traffic_generator/src/main.cpp.s
 
 # Help Target
 help:
@@ -455,27 +383,18 @@ help:
 	@echo "... src/managers/FileHandler.o"
 	@echo "... src/managers/FileHandler.i"
 	@echo "... src/managers/FileHandler.s"
-	@echo "... src/managers/IntersectionController.o"
-	@echo "... src/managers/IntersectionController.i"
-	@echo "... src/managers/IntersectionController.s"
 	@echo "... src/managers/TrafficManager.o"
 	@echo "... src/managers/TrafficManager.i"
 	@echo "... src/managers/TrafficManager.s"
-	@echo "... src/utils/Queue.o"
-	@echo "... src/utils/Queue.i"
-	@echo "... src/utils/Queue.s"
-	@echo "... src/visualization/DebugOverlay.o"
-	@echo "... src/visualization/DebugOverlay.i"
-	@echo "... src/visualization/DebugOverlay.s"
+	@echo "... src/traffic_generator.o"
+	@echo "... src/traffic_generator.i"
+	@echo "... src/traffic_generator.s"
+	@echo "... src/utils/DebugLogger.o"
+	@echo "... src/utils/DebugLogger.i"
+	@echo "... src/utils/DebugLogger.s"
 	@echo "... src/visualization/Renderer.o"
 	@echo "... src/visualization/Renderer.i"
 	@echo "... src/visualization/Renderer.s"
-	@echo "... traffic_generator/src/Generator.o"
-	@echo "... traffic_generator/src/Generator.i"
-	@echo "... traffic_generator/src/Generator.s"
-	@echo "... traffic_generator/src/main.o"
-	@echo "... traffic_generator/src/main.i"
-	@echo "... traffic_generator/src/main.s"
 .PHONY : help
 
 

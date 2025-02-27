@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/Generator.cpp" "CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o" "gcc" "CMakeFiles/traffic_generator.dir/traffic_generator/src/Generator.cpp.o.d"
-  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/traffic_generator/src/main.cpp" "CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o" "gcc" "CMakeFiles/traffic_generator.dir/traffic_generator/src/main.cpp.o.d"
+  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/traffic_generator.cpp" "CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o" "gcc" "CMakeFiles/traffic_generator.dir/src/traffic_generator.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

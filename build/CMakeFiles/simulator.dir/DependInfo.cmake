@@ -13,10 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/core/Vehicle.cpp" "CMakeFiles/simulator.dir/src/core/Vehicle.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/core/Vehicle.cpp.o.d"
   "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/main.cpp" "CMakeFiles/simulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/main.cpp.o.d"
   "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/FileHandler.cpp" "CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o.d"
-  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/IntersectionController.cpp" "CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o.d"
   "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp" "CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o.d"
-  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/Queue.cpp" "CMakeFiles/simulator.dir/src/utils/Queue.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/utils/Queue.cpp.o.d"
-  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/DebugOverlay.cpp" "CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o.d"
+  "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/DebugLogger.cpp" "CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o.d"
   "/Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/Renderer.cpp" "CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o.d"
   )
 

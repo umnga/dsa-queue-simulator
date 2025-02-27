@@ -128,38 +128,10 @@ CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/core/TrafficLight.cpp -o CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.s
 
-CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: CMakeFiles/simulator.dir/flags.make
-CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp
-CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o -MF CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o.d -o CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp
-
-CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp > CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i
-
-CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp -o CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s
-
-CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o: CMakeFiles/simulator.dir/flags.make
-CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/IntersectionController.cpp
-CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o -MF CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o.d -o CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/IntersectionController.cpp
-
-CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/IntersectionController.cpp > CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.i
-
-CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/IntersectionController.cpp -o CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.s
-
 CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/FileHandler.cpp
 CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o -MF CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o.d -o CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/FileHandler.cpp
 
 CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.i: cmake_force
@@ -170,24 +142,24 @@ CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/FileHandler.cpp -o CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.s
 
-CMakeFiles/simulator.dir/src/utils/Queue.cpp.o: CMakeFiles/simulator.dir/flags.make
-CMakeFiles/simulator.dir/src/utils/Queue.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/Queue.cpp
-CMakeFiles/simulator.dir/src/utils/Queue.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simulator.dir/src/utils/Queue.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/utils/Queue.cpp.o -MF CMakeFiles/simulator.dir/src/utils/Queue.cpp.o.d -o CMakeFiles/simulator.dir/src/utils/Queue.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/Queue.cpp
+CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp
+CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o -MF CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o.d -o CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp
 
-CMakeFiles/simulator.dir/src/utils/Queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/utils/Queue.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/Queue.cpp > CMakeFiles/simulator.dir/src/utils/Queue.cpp.i
+CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp > CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.i
 
-CMakeFiles/simulator.dir/src/utils/Queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/utils/Queue.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/Queue.cpp -o CMakeFiles/simulator.dir/src/utils/Queue.cpp.s
+CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/managers/TrafficManager.cpp -o CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.s
 
 CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/Renderer.cpp
 CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o -MF CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o.d -o CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/Renderer.cpp
 
 CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.i: cmake_force
@@ -198,19 +170,19 @@ CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/Renderer.cpp -o CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.s
 
-CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o: CMakeFiles/simulator.dir/flags.make
-CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/DebugOverlay.cpp
-CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o -MF CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o.d -o CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/DebugOverlay.cpp
+CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o: /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/DebugLogger.cpp
+CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o -MF CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o.d -o CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o -c /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/DebugLogger.cpp
 
-CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/DebugOverlay.cpp > CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.i
+CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/DebugLogger.cpp > CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.i
 
-CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/visualization/DebugOverlay.cpp -o CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.s
+CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/umangarayamajhi/Documents/dsa-queue-simulator/src/utils/DebugLogger.cpp -o CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.s
 
 # Object files for target simulator
 simulator_OBJECTS = \
@@ -218,34 +190,31 @@ simulator_OBJECTS = \
 "CMakeFiles/simulator.dir/src/core/Vehicle.cpp.o" \
 "CMakeFiles/simulator.dir/src/core/Lane.cpp.o" \
 "CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.o" \
-"CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o" \
-"CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o" \
 "CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o" \
-"CMakeFiles/simulator.dir/src/utils/Queue.cpp.o" \
+"CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o" \
 "CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o" \
-"CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o"
+"CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o"
 
 # External object files for target simulator
 simulator_EXTERNAL_OBJECTS =
 
-simulator: CMakeFiles/simulator.dir/src/main.cpp.o
-simulator: CMakeFiles/simulator.dir/src/core/Vehicle.cpp.o
-simulator: CMakeFiles/simulator.dir/src/core/Lane.cpp.o
-simulator: CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.o
-simulator: CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o
-simulator: CMakeFiles/simulator.dir/src/managers/IntersectionController.cpp.o
-simulator: CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o
-simulator: CMakeFiles/simulator.dir/src/utils/Queue.cpp.o
-simulator: CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o
-simulator: CMakeFiles/simulator.dir/src/visualization/DebugOverlay.cpp.o
-simulator: CMakeFiles/simulator.dir/build.make
-simulator: /opt/homebrew/opt/sdl3/lib/libSDL3.0.dylib
-simulator: CMakeFiles/simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable simulator"
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/main.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/core/Vehicle.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/core/Lane.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/core/TrafficLight.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/managers/FileHandler.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/managers/TrafficManager.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/visualization/Renderer.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/src/utils/DebugLogger.cpp.o
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/build.make
+bin/simulator.app/Contents/MacOS/simulator: /Users/umangarayamajhi/Documents/dsa-queue-simulator/libs/SDL3_install/lib/libSDL3.0.dylib
+bin/simulator.app/Contents/MacOS/simulator: CMakeFiles/simulator.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/umangarayamajhi/Documents/dsa-queue-simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bin/simulator.app/Contents/MacOS/simulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulator.dir/link.txt --verbose=$(VERBOSE)
+	/opt/homebrew/bin/cmake -E make_directory /Users/umangarayamajhi/Documents/dsa-queue-simulator/build/bin/data/lanes
 
 # Rule to build all files generated by this target.
-CMakeFiles/simulator.dir/build: simulator
+CMakeFiles/simulator.dir/build: bin/simulator.app/Contents/MacOS/simulator
 .PHONY : CMakeFiles/simulator.dir/build
 
 CMakeFiles/simulator.dir/clean:
