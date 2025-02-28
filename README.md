@@ -12,7 +12,7 @@ This project is a traffic junction simulator that utilizes a queue-based system.
 - CMake 3.15 or higher
 - SDL3 library
 
-##Clone the repo:
+## Clone the repo:
 ```bash
 git clone https://github.com/usmga/dsa-queue-simulator
 ```
