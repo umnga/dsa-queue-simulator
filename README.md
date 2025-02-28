@@ -11,3 +11,13 @@ This project is an assignment for 3rd semester Data Structure and Algorithm.
 Clone the repo:
 ```bash
 git clone https://github.com/usmga/dsa-queue-simulator
+
+## Build Instructions
+
+To build the project, run the following commands:
+
+```bash
+cd dsa-queue-simulator
+mkdir build && cd build
+cmake ..
+cmake --build .
