@@ -1,14 +1,16 @@
 # DSA Queue Simulator
 
-It is a traffic junction simulator with queue implementation. I have used SDL (Simple Direct Media Layer) version 3. The programming language used to make this application is C++ v17. I have used CMake to build.
-
-This project is an assignment for 3rd semester Data Structure and Algorithm.
+This project is a traffic junction simulator that utilizes a queue-based system. It is developed in C++ (version 17) using SDL (Simple DirectMedia Layer) version 3 for graphics and CMake for build management.
 
 ![Traffic Junction Simulator Demo](demoWork.gif)
 
 ## How to run the project
 
-Clone the repo:
+## Prerequisites
+
+- C++17 compatible compiler (GCC 8+, Clang 7+, MSVC 19.14+)
+- CMake 3.15 or higher
+- SDL3 libraryClone the repo:
 ```bash
 git clone https://github.com/usmga/dsa-queue-simulator
 ```
