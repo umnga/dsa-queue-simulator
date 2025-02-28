@@ -5,28 +5,8 @@ It is a traffic_junction simulator with queue implementation. I have used SDL( S
 
 The project is assignmeant for 3rd semester Data Structure and algorithm.
 ```````````````````````````````````````````````````````````````````
-`
-`
-`
-`
-`
-`
-`
-`
-`
-`VIDEO               
-`
-`
-`
-`
-`
-`
-``
-`
-`
-`
-`
-``````````````````````````````````````````````````````````````````
+![Umanga Rayamajhi GIF](UmangaRayamajhi.gif)
+
 
 
 
