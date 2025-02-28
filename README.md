@@ -27,7 +27,7 @@ cmake ..
 cmake --build .
 ```
 
-##Running the applications:
+## Running the applications:
 
 ```bash
 ./simulator
